@@ -39,7 +39,7 @@
 
 # print(cur.rowcount())
 
-import add_sub as a
+# import add_sub as a
 import mult_div as d
 
 # print(a.add_r(5, 6))
