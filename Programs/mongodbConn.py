@@ -34,7 +34,7 @@ print(my_client.list_database_names())
 for x in my_collection.find():
     print(x)
 
-my_collection2.insert_one({ "id": 15, "name": "Sherlock",
+my_collection2.insert_one({"id": 15, "name": "Sherlock",
                           "address": "221B Baker Street"})
 
 print(my_client.list_database_names())
