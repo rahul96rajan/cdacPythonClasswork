@@ -30,7 +30,7 @@ import re
 # \b : word boundaries \B
 # reg_b = re.compile(r"\bclass\b")
 # reg_B = re.compile(r"\Bclass\B")
-str2= "classification of subclasses in a class 175 class class y y end"
+str2 = "classification of subclasses in a class 175 class class y y end"
 # print(reg_b.findall(str2))
 # print(reg_B.findall(str2))
 

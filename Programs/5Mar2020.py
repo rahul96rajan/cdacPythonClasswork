@@ -142,12 +142,25 @@
 #     fp.write("Line 2\n")
 #     fp.write("Line 3\n")
 
-with open("C:/Users/rahulrajan/Documents/scripts/cdacPythonClasswork/Programs/"
-          + "files/sample1.txt", "r", encoding='UTF-8') as fp:
-    print(fp.read(2))
-    print(fp.read(2))
-    print(fp.read(2))
-    print(fp.read())
-    print("When Cursor at the end.", fp.read())
-    fp.seek(0)  # To reposition the cursor
-    print(fp.read())
+# with open("C:/Users/rahulrajan/Documents/scripts/cdacPythonClasswork/"
+#           + "Programs/files/sample1.txt", "r", encoding='UTF-8') as fp:
+#     print(fp.read(2))
+#     print(fp.read(2))
+#     print(fp.read(2))
+#     print(fp.read())
+#     print("When Cursor at the end.", fp.read())
+#     fp.seek(0)  # To reposition the cursor
+#     print(fp.read())
+
+fi = open("C:/Users/rahulrajan/Documents/scripts/cdacPythonClasswork/Programs/"
+          + "files/sample1.txt", "r+", encoding='UTF-8')
+lst = ['camel of egypt', 'house', 'cow']
+for item in lst:
+    print(item, file=fi)
+print(file=fi)
+for item in lst:
+    print(item, file=fi, end="-")
+# fi.seek(0)
+# print("Printed values:", fi.read(), sep="\n")
+fi.seek(0)
+print("Printed values:", fi.readline(), sep="\n")
